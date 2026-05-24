@@ -236,18 +236,6 @@ body {
   background: #ff4655;
 }
 
-.sec-header .sec-label {
-  font-family: "Space Mono", monospace;
-  font-size: 10px;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  color: #ece8e1;
-  opacity: 0.6;
-  margin-bottom: 4px;
-  padding: 18px 24px 0;
-  display: block;
-}
-
 .sec-header h2 {
   font-size: 28px;
   font-weight: 900;
@@ -370,17 +358,6 @@ body {
   font-size: 13px;
   color: #6b7280;
   margin: 0;
-}
-
-.map-tag {
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  background: rgba(255, 70, 85, 0.1);
-  color: #ff4655;
-  padding: 3px 8px;
-  border-radius: 3px;
 }
 
 /* ─── ESPORTS SECTION ─── */
@@ -775,16 +752,6 @@ body {
   gap: 0;
 }
 
-.et-left {
-  width: 160px;
-  flex-shrink: 0;
-  background: #1a1a2e;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 32px 24px;
-}
-
 .et-logo {
   width: 96px;
   height: 96px;
@@ -827,15 +794,6 @@ body {
   color: #1a1a2e;
   margin: 0 0 4px;
   letter-spacing: -0.5px;
-}
-
-.et-league {
-  font-family: "Space Mono", monospace;
-  font-size: 10px;
-  font-weight: 700;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: #ff4655;
 }
 
 .et-desc {
@@ -886,8 +844,6 @@ body {
 .du-logo      { background: #1a1a2e; color: #ff4655; }
 .onic-logo    { background: #1a1a2e; color: #ff4655; }
 .big-logo     { background: #1a1a2e; color: #ff4655; }
-.rrqk-logo    { background: #1a1a2e; color: #ff4655; }
-.celeste-logo { background: #1a1a2e; color: #ff4655; }
 
 .el-name {
   font-size: 15px;
