@@ -223,6 +223,11 @@ body {
   color: #fff;
 }
 
+.btn-valo-sm {
+  font-size: 12px;
+  padding: 10px 24px;
+}
+
 /* ─── SECTION HEADERS ─── */
 .sec-header {
   margin-bottom: 36px;
@@ -316,6 +321,13 @@ body {
   color: #6b7280;
   margin: 0;
   line-height: 1.6;
+}
+
+.role-intro {
+  color: #d0e8f5;
+  font-size: 14px;
+  margin-bottom: 28px;
+  max-width: 560px;
 }
 
 /* ─── MAPS SECTION ─── */
@@ -755,6 +767,8 @@ body {
 .et-logo {
   width: 96px;
   height: 96px;
+  flex-shrink: 0;
+  background: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -779,6 +793,17 @@ body {
 .et-right {
   flex: 1;
   padding: 24px 28px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.et-body {
+  flex: 1;
+}
+
+.esports-section--no-pb {
+  padding-bottom: 0;
 }
 
 .et-top {
@@ -821,6 +846,7 @@ body {
   width: 56px;
   height: 56px;
   border-radius: 8px;
+  background: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -839,11 +865,6 @@ body {
   font-weight: 700;
   letter-spacing: 0.5px;
 }
-
-.ae-logo      { background: #1a1a2e; color: #ff4655; }
-.du-logo      { background: #1a1a2e; color: #ff4655; }
-.onic-logo    { background: #1a1a2e; color: #ff4655; }
-.big-logo     { background: #1a1a2e; color: #ff4655; }
 
 .el-name {
   font-size: 15px;
