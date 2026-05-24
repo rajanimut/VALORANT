@@ -1,4 +1,5 @@
-/* ─── CSS VARIABLES ─── */
+/* === GLOBAL === */
+
 :root {
   --accent: #00d4ff;
   --accent-glow: rgba(0, 212, 255, 0.15);
@@ -7,7 +8,6 @@
   --cream: #ece8e1;
 }
 
-/* ─── RESET ─── */
 *,
 *::before,
 *::after {
@@ -22,7 +22,6 @@ a {
   text-decoration: none;
 }
 
-/* ─── BODY ─── */
 body {
   font-family: "Sora", sans-serif;
   color: var(--cream);
@@ -32,7 +31,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* ─── NAVBAR ─── */
 #navbar {
   position: fixed;
   top: 0;
@@ -51,7 +49,6 @@ body {
   justify-content: space-between;
 }
 
-/* ─── LOGO ─── */
 .logo {
   display: flex;
   align-items: center;
@@ -88,7 +85,6 @@ body {
   letter-spacing: -0.3px;
 }
 
-/* ─── NAV LINKS ─── */
 .nav-links {
   display: flex;
   align-items: center;
@@ -136,73 +132,27 @@ body {
   opacity: 0.7;
 }
 
-/* ─── HERO ─── */
-.hero-section {
-  position: relative;
-  width: 100%;
-  min-height: 83vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.sec-header {
+  margin-bottom: 36px;
+}
+
+.sec-header .container {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  border-radius: 6px;
   overflow: hidden;
-  background: #1a1a2e;
+  background: #ff4655;
 }
 
-/* ─── HERO VIDEO ─── */
-.hero-video {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-  display: block;
-  z-index: 0;
-}
-
-/* ─── HERO OVERLAY ─── */
-.hero-overlay {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    to bottom,
-    rgba(10, 10, 25, 0.55) 0%,
-    rgba(10, 10, 25, 0.45) 50%,
-    rgba(10, 10, 25, 0.75) 100%
-  );
-  z-index: 1;
-}
-
-/* ─── HERO CONTENT ─── */
-.hero-content {
-  position: relative;
-  z-index: 2;
-  padding: 110px 20px 50px;
-  width: 100%;
-}.hero-title {
-  font-size: 96px;
+.sec-header h2 {
+  font-size: 28px;
   font-weight: 900;
   color: #ece8e1;
-  line-height: 1;
-  letter-spacing: -3px;
-  margin-bottom: 20px;
+  margin: 0;
+  letter-spacing: -0.5px;
+  padding: 20px 24px 20px;
 }
 
-.hero-title span {
-  color: #ff4655;
-}
-
-.hero-subtitle {
-  font-size: 16px;
-  color: #8b8fa8;
-  max-width: 520px;
-  line-height: 1.7;
-  margin-bottom: 32px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* ─── BUTTONS ─── */
 .btn-valo {
   background: #ff4655;
   color: #fff;
@@ -228,29 +178,72 @@ body {
   padding: 10px 24px;
 }
 
-/* ─── SECTION HEADERS ─── */
-.sec-header {
-  margin-bottom: 36px;
-}
+/* === 1. HOME === */
 
-.sec-header .container {
-  padding-left: 0 !important;
-  padding-right: 0 !important;
-  border-radius: 6px;
+.hero-section {
+  position: relative;
+  width: 100%;
+  min-height: 83vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   overflow: hidden;
-  background: #ff4655;
+  background: #1a1a2e;
 }
 
-.sec-header h2 {
-  font-size: 28px;
+.hero-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  z-index: 0;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(10, 10, 25, 0.55) 0%,
+    rgba(10, 10, 25, 0.45) 50%,
+    rgba(10, 10, 25, 0.75) 100%
+  );
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  padding: 110px 20px 50px;
+  width: 100%;
+}
+
+.hero-title {
+  font-size: 96px;
   font-weight: 900;
   color: #ece8e1;
-  margin: 0;
-  letter-spacing: -0.5px;
-  padding: 20px 24px 20px;
+  line-height: 1;
+  letter-spacing: -3px;
+  margin-bottom: 20px;
 }
 
-/* ─── ABOUT SECTION ─── */
+.hero-title span {
+  color: #ff4655;
+}
+
+.hero-subtitle {
+  font-size: 16px;
+  color: #8b8fa8;
+  max-width: 520px;
+  line-height: 1.7;
+  margin-bottom: 32px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .about-section {
   background: #1e2d4a;
   padding: 60px 0;
@@ -292,45 +285,42 @@ body {
   margin-top: 6px;
 }
 
-/* ─── AGENTS SECTION (index.html) ─── */
-.agents-section {
+.esports-section {
   background: #1e2d4a;
   padding: 60px 0;
 }
 
-.role-card {
+.news-item {
   background: #fff;
   border-radius: 6px;
-  padding: 24px 20px;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
-  height: 140px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+  margin-bottom: 16px;
 }
 
-.role-card h5 {
-  font-weight: 800;
-  font-size: 15px;
-  color: #1a1a2e;
+.news-item .news-cat {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #ff4655;
   margin-bottom: 6px;
 }
 
-.role-card p {
-  font-size: 13px;
-  color: #6b7280;
-  margin: 0;
-  line-height: 1.6;
-}
-
-.role-intro {
-  color: #d0e8f5;
+.news-item h6 {
+  font-weight: 700;
   font-size: 14px;
-  margin-bottom: 28px;
-  max-width: 560px;
+  color: #1a1a2e;
+  margin-bottom: 6px;
+  line-height: 1.4;
 }
 
-/* ─── MAPS SECTION ─── */
+.news-item p {
+  font-size: 12px;
+  color: #5a6a78;
+  margin: 0;
+}
+
 .maps-section {
   background: #1e2d4a;
   padding: 60px 0;
@@ -372,46 +362,44 @@ body {
   margin: 0;
 }
 
-/* ─── ESPORTS SECTION ─── */
-.esports-section {
+.agents-section {
   background: #1e2d4a;
   padding: 60px 0;
 }
 
-.news-item {
+.role-intro {
+  color: #d0e8f5;
+  font-size: 14px;
+  margin-bottom: 28px;
+  max-width: 560px;
+}
+
+.role-card {
   background: #fff;
   border-radius: 6px;
-  padding: 20px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
-  margin-bottom: 16px;
+  padding: 24px 20px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
+  height: 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.news-item .news-cat {
-  font-size: 10px;
-  font-weight: 700;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: #ff4655;
-  margin-bottom: 6px;
-}
-
-.news-item h6 {
-  font-weight: 700;
-  font-size: 14px;
+.role-card h5 {
+  font-weight: 800;
+  font-size: 15px;
   color: #1a1a2e;
   margin-bottom: 6px;
-  line-height: 1.4;
 }
 
-.news-item p {
-  font-size: 12px;
-  color: #5a6a78;
+.role-card p {
+  font-size: 13px;
+  color: #6b7280;
   margin: 0;
+  line-height: 1.6;
 }
 
-/* ══════════════════════════════════════════
-   AGENTS PAGE
-══════════════════════════════════════════ */
+/* === 2. AGENTS === */
 
 .page-hero {
   padding-top: 110px;
@@ -453,20 +441,12 @@ body {
   padding: 56px 0 72px;
 }
 
-/* ─── AGENTS GRID ─── */
 .agents-grid {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   gap: 16px;
 }
 
-.weapons-grid {
-  grid-template-columns: repeat(6, 1fr);
-  gap: 16px;
-  margin-bottom: 0;
-}
-
-/* ─── FILTER BAR ─── */
 .agent-filter-bar {
   display: flex;
   gap: 8px;
@@ -494,7 +474,6 @@ body {
   color: #fff;
 }
 
-/* ─── AGENT CARD ─── */
 .agent-card {
   background: #1e2d4a;
   border-radius: 6px;
@@ -545,16 +524,35 @@ body {
   letter-spacing: -0.2px;
 }
 
-/* ══════════════════════════════════════════
-   MAPS PAGE
-══════════════════════════════════════════ */
+/* === 3. WEAPON === */
+
+.weapons-grid {
+  grid-template-columns: repeat(6, 1fr);
+  gap: 16px;
+  margin-bottom: 0;
+}
+
+.agent-img-wrap.weapon-bg {
+  background: rgba(255, 70, 85, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 16px;
+  aspect-ratio: 4 / 3;
+}
+
+.agent-img-wrap.weapon-bg .agent-img {
+  object-fit: contain;
+  object-position: center;
+}
+
+/* === 4. MAPS === */
 
 .maps-page-section {
   background: #0d1117;
   padding: 60px 0;
 }
 
-/* ─── MAP CARD FULL WIDTH ─── */
 .map-card-full {
   position: relative;
   width: 100%;
@@ -564,7 +562,6 @@ body {
   align-items: flex-end;
 }
 
-/* ─── MAP CARD HALF WIDTH ─── */
 .map-card-half {
   position: relative;
   width: 100%;
@@ -572,14 +569,13 @@ body {
   overflow: hidden;
   display: flex;
   align-items: flex-end;
-  border-top: 1px solid rgba(255,255,255,0.05);
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .map-row-2 .map-card-half:first-child {
-  border-right: 1px solid rgba(255,255,255,0.05);
+  border-right: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-/* ─── SHARED IMAGE WRAPPER ─── */
 .map-card-img-wrap {
   position: absolute;
   inset: 0;
@@ -595,7 +591,6 @@ body {
   display: block;
 }
 
-/* ─── OVERLAY GRADIENT ─── */
 .map-card-overlay {
   position: absolute;
   inset: 0;
@@ -608,7 +603,6 @@ body {
   );
 }
 
-/* ─── CARD BODY (text over image) ─── */
 .map-card-body {
   position: relative;
   z-index: 2;
@@ -621,7 +615,6 @@ body {
   padding: 0 56px 52px;
 }
 
-/* ─── MAP NAME ─── */
 .map-card-name {
   font-size: 52px;
   font-weight: 900;
@@ -638,7 +631,6 @@ body {
   margin-bottom: 10px;
 }
 
-/* ─── MAP DESC ─── */
 .map-card-desc {
   font-size: 14px;
   color: rgba(208, 220, 236, 0.75);
@@ -652,35 +644,145 @@ body {
   max-width: 440px;
 }
 
-/* ─── WEAPON PAGE — image wrapper overrides ─── */
-.agent-img-wrap.weapon-bg {
-  background: rgba(255, 70, 85, 0.15);
+/* === 5. ESPORTS === */
+
+.esports-section--no-pb {
+  padding-bottom: 0;
+}
+
+.et-card {
+  background: #fff;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.08);
+  display: flex;
+  gap: 0;
+}
+
+.et-logo {
+  width: 96px;
+  height: 96px;
+  flex-shrink: 0;
+  background: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 20px 16px;
-  aspect-ratio: 4 / 3;
 }
 
-.agent-img-wrap.weapon-bg .agent-img {
+.et-logo img {
+  width: 100%;
+  height: 100%;
   object-fit: contain;
-  object-position: center;
 }
-/* ══════════════════════════════════════════
-   FOOTER
-══════════════════════════════════════════ */
+
+.et-logo-fallback {
+  font-family: "Space Mono", monospace;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.boom-fb {
+  color: #ff4655 !important;
+}
+
+.et-right {
+  flex: 1;
+  padding: 24px 28px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.et-body {
+  flex: 1;
+}
+
+.et-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.et-name {
+  font-size: 22px;
+  font-weight: 900;
+  color: #1a1a2e;
+  margin: 0 0 4px;
+  letter-spacing: -0.5px;
+}
+
+.et-desc {
+  font-size: 13px;
+  color: #4b5563;
+  line-height: 1.75;
+  margin: 0;
+}
+
+.el-card {
+  background: #fff;
+  border-radius: 6px;
+  padding: 20px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.el-logo {
+  width: 56px;
+  height: 56px;
+  border-radius: 8px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.el-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.el-logo-fb {
+  font-family: "Space Mono", monospace;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.el-name {
+  font-size: 15px;
+  font-weight: 800;
+  color: #1a1a2e;
+  margin: 0;
+}
+
+.el-desc {
+  font-size: 12px;
+  color: #5a6a78;
+  line-height: 1.65;
+  margin: 0;
+  flex: 1;
+}
+
+/* === FOOTER === */
 
 .footer {
   background: #1a1a2e;
   padding: 2.5rem 2rem 1.5rem;
-  font-family: 'Sora', sans-serif;
+  font-family: "Sora", sans-serif;
   text-align: center;
   position: relative;
   overflow: hidden;
 }
 
 .footer::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 50%;
@@ -691,7 +793,7 @@ body {
 }
 
 .footer-logo {
-  font-family: 'Sora', sans-serif;
+  font-family: "Sora", sans-serif;
   font-size: 26px;
   font-weight: 900;
   letter-spacing: 6px;
@@ -738,7 +840,9 @@ body {
   justify-content: center;
   color: rgba(255, 255, 255, 0.4);
   cursor: pointer;
-  transition: border-color 0.2s, color 0.2s;
+  transition:
+    border-color 0.2s,
+    color 0.2s;
 }
 
 .footer-s:hover {
@@ -750,133 +854,4 @@ body {
   font-size: 11px;
   color: rgba(255, 255, 255, 0.2);
   line-height: 1.8;
-}
-/* ══════════════════════════════════════════
-   ESPORTS PAGE — VCT TEAM CARDS (et-)
-══════════════════════════════════════════ */
-
-.et-card {
-  background: #fff;
-  border-radius: 6px;
-  overflow: hidden;
-  box-shadow: 0 2px 16px rgba(0,0,0,0.08);
-  display: flex;
-  gap: 0;
-}
-
-.et-logo {
-  width: 96px;
-  height: 96px;
-  flex-shrink: 0;
-  background: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.et-logo img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
-
-.et-logo-fallback {
-  font-family: "Space Mono", monospace;
-  font-size: 16px;
-  font-weight: 700;
-  color: #fff;
-  letter-spacing: 1px;
-}
-
-.boom-fb { color: #ff4655 !important; }
-
-.et-right {
-  flex: 1;
-  padding: 24px 28px;
-  display: flex;
-  align-items: center;
-  gap: 24px;
-}
-
-.et-body {
-  flex: 1;
-}
-
-.esports-section--no-pb {
-  padding-bottom: 0;
-}
-
-.et-top {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  margin-bottom: 12px;
-}
-
-.et-name {
-  font-size: 22px;
-  font-weight: 900;
-  color: #1a1a2e;
-  margin: 0 0 4px;
-  letter-spacing: -0.5px;
-}
-
-.et-desc {
-  font-size: 13px;
-  color: #4b5563;
-  line-height: 1.75;
-  margin: 0;
-}
-
-/* ══════════════════════════════════════════
-   ESPORTS PAGE — LOCAL TEAM CARDS (el-)
-══════════════════════════════════════════ */
-
-.el-card {
-  background: #fff;
-  border-radius: 6px;
-  padding: 20px;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.el-logo {
-  width: 56px;
-  height: 56px;
-  border-radius: 8px;
-  background: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-}
-
-.el-logo img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
-
-.el-logo-fb {
-  font-family: "Space Mono", monospace;
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 0.5px;
-}
-
-.el-name {
-  font-size: 15px;
-  font-weight: 800;
-  color: #1a1a2e;
-  margin: 0;
-}
-
-.el-desc {
-  font-size: 12px;
-  color: #5a6a78;
-  line-height: 1.65;
-  margin: 0;
-  flex: 1;
 }
