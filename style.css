@@ -1,13 +1,5 @@
 /*GLOBAL — Reset, variabel, dan base style*/
 
-:root {
-  --accent: #00d4ff;
-  --accent-glow: rgba(0, 212, 255, 0.15);
-  --text-dim: #6b7280;
-  --white: #f0f4ff;
-  --cream: #ece8e1;
-}
-
 *,
 *::before,
 *::after {
@@ -24,7 +16,7 @@ a {
 
 body {
   font-family: "Sora", sans-serif;
-  color: var(--cream);
+  color: #ece8e1;
   background-color: #f5f0eb;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -64,7 +56,7 @@ body {
 .logo-name {
   font-size: 15px;
   font-weight: 800;
-  color: var(--white);
+  color: #f0f4ff;
   letter-spacing: -0.3px;
 }
 
@@ -75,16 +67,16 @@ body {
 .nav-label {
   font-size: 13.5px;
   font-weight: 600;
-  color: var(--text-dim);
+  color: #6b7280;
   padding: 6px 14px;
   border-radius: 8px;
   display: block;
 }
 .nav-label:hover {
-  color: var(--white);
+  color: #f0f4ff;
 }
 .nav-label.active {
-  color: var(--accent);
+  color: #00d4ff;
 }
 
 .sec-header {
