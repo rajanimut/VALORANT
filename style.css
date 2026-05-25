@@ -79,6 +79,10 @@ body {
   color: #00d4ff;
 }
 
+
+
+/*HOME — Hero, About, News, Role Cards, Map List (index.html)*/
+
 .sec-header {
   margin-bottom: 36px;
 }
@@ -119,8 +123,6 @@ body {
   font-size: 12px;
   padding: 10px 24px;
 }
-
-/*HOME — Hero, About, News, Role Cards, Map List (index.html)*/
 
 .hero-section {
   position: relative;
