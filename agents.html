@@ -1,544 +1,412 @@
 <!doctype html>
 <html lang="id">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Agents — Everything About Valorant</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;900&family=Space+Mono:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-    />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <nav id="navbar" class="d-flex align-items-center justify-content-between">
-      <a class="logo d-flex align-items-center gap-2" href="index.html">
-        <div class="logo-icon d-flex align-items-center justify-content-center">
-          <img src="assets/images/logo-valorant.webp" alt="logo" />
-        </div>
-        <span class="logo-name">Everything about Valorant</span>
-      </a>
-      <ul class="nav-links d-flex align-items-center m-0">
-        <li><a class="nav-label" href="index.html">Home</a></li>
-        <li><a class="nav-label active" href="agents.html">Agents</a></li>
-        <li><a class="nav-label" href="weapon.html">Weapon</a></li>
-        <li><a class="nav-label" href="maps.html">Maps</a></li>
-        <li><a class="nav-label" href="esports.html">Esports</a></li>
-      </ul>
-    </nav>
 
-    <section class="page-hero text-center">
-      <div class="container">
-        <div class="page-hero-label">VALORANT</div>
-        <h1 class="page-hero-title">AGENTS</h1>
-        <p class="page-hero-sub">29 agen dengan kemampuan unik</p>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agents — Everything About Valorant</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;900&family=Space+Mono:wght@400;700&display=swap"
+    rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <nav id="navbar" class="d-flex align-items-center justify-content-between">
+    <a class="logo d-flex align-items-center gap-2" href="index.html">
+      <div class="logo-icon d-flex align-items-center justify-content-center">
+        <img src="assets/images/logo-valorant.webp" alt="logo" />
       </div>
-    </section>
+      <span class="logo-name">Everything about Valorant</span>
+    </a>
+    <ul class="nav-links d-flex align-items-center m-0">
+      <li><a class="nav-label" href="index.html">Home</a></li>
+      <li><a class="nav-label active" href="agents.html">Agents</a></li>
+      <li><a class="nav-label" href="weapon.html">Weapon</a></li>
+      <li><a class="nav-label" href="maps.html">Maps</a></li>
+      <li><a class="nav-label" href="esports.html">Esports</a></li>
+    </ul>
+  </nav>
 
-    <section class="agents-page-section">
-      <div class="container-fluid px-4">
-        <div class="agent-filter-bar d-flex justify-content-center gap-2 mb-4">
-          <button class="agent-filter-btn active" data-role="all">Semua</button>
-          <button class="agent-filter-btn" data-role="duelist">Duelist</button>
-          <button class="agent-filter-btn" data-role="controller">
-            Controller
-          </button>
-          <button class="agent-filter-btn" data-role="initiator">
-            Initiator
-          </button>
-          <button class="agent-filter-btn" data-role="sentinel">
-            Sentinel
-          </button>
+  <section class="page-hero text-center">
+    <div class="container">
+      <div class="page-hero-label">VALORANT</div>
+      <h1 class="page-hero-title">AGENTS</h1>
+      <p class="page-hero-sub">29 agen dengan kemampuan unik</p>
+    </div>
+  </section>
+
+  <section class="agents-page-section">
+    <div class="container-fluid px-4">
+      <div class="agent-filter-bar d-flex justify-content-center gap-2 mb-4">
+        <button class="agent-filter-btn active" data-role="all">Semua</button>
+        <button class="agent-filter-btn" data-role="duelist">Duelist</button>
+        <button class="agent-filter-btn" data-role="controller">
+          Controller
+        </button>
+        <button class="agent-filter-btn" data-role="initiator">
+          Initiator
+        </button>
+        <button class="agent-filter-btn" data-role="sentinel">
+          Sentinel
+        </button>
+      </div>
+
+      <div class="agents-grid">
+        <div class="agent-item" data-role="controller">
+          <div class="agent-card">
+            <div class="agent-img-wrap">
+              <img src="assets/images/agen/astra.webp" alt="Astra" class="agent-img" />
+            </div>
+            <div class="agent-info">
+              <div class="agent-role-tag">Controller</div>
+              <h5 class="agent-name">Astra</h5>
+            </div>
+          </div>
         </div>
-
-        <div class="agents-grid">
-          <div class="agent-item" data-role="controller">
-            <div class="agent-card">
-              <div class="agent-img-wrap">
-                <img
-                  src="assets/images/agen/astra.webp"
-                  alt="Astra"
-                  class="agent-img"
-                />
-              </div>
-              <div class="agent-info">
-                <div class="agent-role-tag">Controller</div>
-                <h5 class="agent-name">Astra</h5>
-              </div>
+        <div class="agent-item" data-role="initiator">
+          <div class="agent-card">
+            <div class="agent-img-wrap">
+              <img src="assets/images/agen/breach.webp" alt="Breach" class="agent-img" />
+            </div>
+            <div class="agent-info">
+              <div class="agent-role-tag">Initiator</div>
+              <h5 class="agent-name">Breach</h5>
             </div>
           </div>
-          <div class="agent-item" data-role="initiator">
-            <div class="agent-card">
-              <div class="agent-img-wrap">
-                <img
-                  src="assets/images/agen/breach.webp"
-                  alt="Breach"
-                  class="agent-img"
-                />
-              </div>
-              <div class="agent-info">
-                <div class="agent-role-tag">Initiator</div>
-                <h5 class="agent-name">Breach</h5>
-              </div>
+        </div>
+        <div class="agent-item" data-role="controller">
+          <div class="agent-card">
+            <div class="agent-img-wrap">
+              <img src="assets/images/agen/brimstone.webp" alt="Brimstone" class="agent-img" />
+            </div>
+            <div class="agent-info">
+              <div class="agent-role-tag">Controller</div>
+              <h5 class="agent-name">Brimstone</h5>
             </div>
           </div>
-          <div class="agent-item" data-role="controller">
-            <div class="agent-card">
-              <div class="agent-img-wrap">
-                <img
-                  src="assets/images/agen/brimstone.webp"
-                  alt="Brimstone"
-                  class="agent-img"
-                />
-              </div>
-              <div class="agent-info">
-                <div class="agent-role-tag">Controller</div>
-                <h5 class="agent-name">Brimstone</h5>
-              </div>
+        </div>
+        <div class="agent-item" data-role="sentinel">
+          <div class="agent-card">
+            <div class="agent-img-wrap">
+              <img src="assets/images/agen/chamber.webp" alt="Chamber" class="agent-img" />
+            </div>
+            <div class="agent-info">
+              <div class="agent-role-tag">Sentinel</div>
+              <h5 class="agent-name">Chamber</h5>
             </div>
           </div>
-          <div class="agent-item" data-role="sentinel">
-            <div class="agent-card">
-              <div class="agent-img-wrap">
-                <img
-                  src="assets/images/agen/chamber.webp"
-                  alt="Chamber"
-                  class="agent-img"
-                />
-              </div>
-              <div class="agent-info">
-                <div class="agent-role-tag">Sentinel</div>
-                <h5 class="agent-name">Chamber</h5>
-              </div>
+        </div>
+        <div class="agent-item" data-role="controller">
+          <div class="agent-card">
+            <div class="agent-img-wrap">
+              <img src="assets/images/agen/clove.webp" alt="Clove" class="agent-img" />
+            </div>
+            <div class="agent-info">
+              <div class="agent-role-tag">Controller</div>
+              <h5 class="agent-name">Clove</h5>
             </div>
           </div>
-          <div class="agent-item" data-role="controller">
-            <div class="agent-card">
-              <div class="agent-img-wrap">
-                <img
-                  src="assets/images/agen/clove.webp"
-                  alt="Clove"
-                  class="agent-img"
-                />
-              </div>
-              <div class="agent-info">
-                <div class="agent-role-tag">Controller</div>
-                <h5 class="agent-name">Clove</h5>
-              </div>
+        </div>
+        <div class="agent-item" data-role="sentinel">
+          <div class="agent-card">
+            <div class="agent-img-wrap">
+              <img src="assets/images/agen/cypher.webp" alt="Cypher" class="agent-img" />
+            </div>
+            <div class="agent-info">
+              <div class="agent-role-tag">Sentinel</div>
+              <h5 class="agent-name">Cypher</h5>
             </div>
           </div>
-          <div class="agent-item" data-role="sentinel">
-            <div class="agent-card">
-              <div class="agent-img-wrap">
-                <img
-                  src="assets/images/agen/cypher.webp"
-                  alt="Cypher"
-                  class="agent-img"
-                />
-              </div>
-              <div class="agent-info">
-                <div class="agent-role-tag">Sentinel</div>
-                <h5 class="agent-name">Cypher</h5>
-              </div>
+        </div>
+        <div class="agent-item" data-role="sentinel">
+          <div class="agent-card">
+            <div class="agent-img-wrap">
+              <img src="assets/images/agen/deadlock.webp" alt="Deadlock" class="agent-img" />
+            </div>
+            <div class="agent-info">
+              <div class="agent-role-tag">Sentinel</div>
+              <h5 class="agent-name">Deadlock</h5>
             </div>
           </div>
-          <div class="agent-item" data-role="sentinel">
-            <div class="agent-card">
-              <div class="agent-img-wrap">
-                <img
-                  src="assets/images/agen/deadlock.webp"
-                  alt="Deadlock"
-                  class="agent-img"
-                />
-              </div>
-              <div class="agent-info">
-                <div class="agent-role-tag">Sentinel</div>
-                <h5 class="agent-name">Deadlock</h5>
-              </div>
+        </div>
+        <div class="agent-item" data-role="initiator">
+          <div class="agent-card">
+            <div class="agent-img-wrap">
+              <img src="assets/images/agen/fade.webp" alt="Fade" class="agent-img" />
+            </div>
+            <div class="agent-info">
+              <div class="agent-role-tag">Initiator</div>
+              <h5 class="agent-name">Fade</h5>
             </div>
           </div>
-          <div class="agent-item" data-role="initiator">
-            <div class="agent-card">
-              <div class="agent-img-wrap">
-                <img
-                  src="assets/images/agen/fade.webp"
-                  alt="Fade"
-                  class="agent-img"
-                />
-              </div>
-              <div class="agent-info">
-                <div class="agent-role-tag">Initiator</div>
-                <h5 class="agent-name">Fade</h5>
-              </div>
+        </div>
+        <div class="agent-item" data-role="initiator">
+          <div class="agent-card">
+            <div class="agent-img-wrap">
+              <img src="assets/images/agen/gekko.webp" alt="Gekko" class="agent-img" />
+            </div>
+            <div class="agent-info">
+              <div class="agent-role-tag">Initiator</div>
+              <h5 class="agent-name">Gekko</h5>
             </div>
           </div>
-          <div class="agent-item" data-role="initiator">
-            <div class="agent-card">
-              <div class="agent-img-wrap">
-                <img
-                  src="assets/images/agen/gekko.webp"
-                  alt="Gekko"
-                  class="agent-img"
-                />
-              </div>
-              <div class="agent-info">
-                <div class="agent-role-tag">Initiator</div>
-                <h5 class="agent-name">Gekko</h5>
-              </div>
+        </div>
+        <div class="agent-item" data-role="controller">
+          <div class="agent-card">
+            <div class="agent-img-wrap">
+              <img src="assets/images/agen/harbor.webp" alt="Harbor" class="agent-img" />
+            </div>
+            <div class="agent-info">
+              <div class="agent-role-tag">Controller</div>
+              <h5 class="agent-name">Harbor</h5>
             </div>
           </div>
-          <div class="agent-item" data-role="controller">
-            <div class="agent-card">
-              <div class="agent-img-wrap">
-                <img
-                  src="assets/images/agen/harbor.webp"
-                  alt="Harbor"
-                  class="agent-img"
-                />
-              </div>
-              <div class="agent-info">
-                <div class="agent-role-tag">Controller</div>
-                <h5 class="agent-name">Harbor</h5>
-              </div>
+        </div>
+        <div class="agent-item" data-role="duelist">
+          <div class="agent-card">
+            <div class="agent-img-wrap">
+              <img src="assets/images/agen/iso.webp" alt="Iso" class="agent-img" />
+            </div>
+            <div class="agent-info">
+              <div class="agent-role-tag">Duelist</div>
+              <h5 class="agent-name">Iso</h5>
             </div>
           </div>
-          <div class="agent-item" data-role="duelist">
-            <div class="agent-card">
-              <div class="agent-img-wrap">
-                <img
-                  src="assets/images/agen/iso.webp"
-                  alt="Iso"
-                  class="agent-img"
-                />
-              </div>
-              <div class="agent-info">
-                <div class="agent-role-tag">Duelist</div>
-                <h5 class="agent-name">Iso</h5>
-              </div>
+        </div>
+        <div class="agent-item" data-role="duelist">
+          <div class="agent-card">
+            <div class="agent-img-wrap">
+              <img src="assets/images/agen/jett.webp" alt="Jett" class="agent-img" />
+            </div>
+            <div class="agent-info">
+              <div class="agent-role-tag">Duelist</div>
+              <h5 class="agent-name">Jett</h5>
             </div>
           </div>
-          <div class="agent-item" data-role="duelist">
-            <div class="agent-card">
-              <div class="agent-img-wrap">
-                <img
-                  src="assets/images/agen/jett.webp"
-                  alt="Jett"
-                  class="agent-img"
-                />
-              </div>
-              <div class="agent-info">
-                <div class="agent-role-tag">Duelist</div>
-                <h5 class="agent-name">Jett</h5>
-              </div>
+        </div>
+        <div class="agent-item" data-role="initiator">
+          <div class="agent-card">
+            <div class="agent-img-wrap">
+              <img src="assets/images/agen/kay-o.webp" alt="KAY/O" class="agent-img" />
+            </div>
+            <div class="agent-info">
+              <div class="agent-role-tag">Initiator</div>
+              <h5 class="agent-name">KAY/O</h5>
             </div>
           </div>
-          <div class="agent-item" data-role="initiator">
-            <div class="agent-card">
-              <div class="agent-img-wrap">
-                <img
-                  src="assets/images/agen/kayo.webp"
-                  alt="KAY/O"
-                  class="agent-img"
-                />
-              </div>
-              <div class="agent-info">
-                <div class="agent-role-tag">Initiator</div>
-                <h5 class="agent-name">KAY/O</h5>
-              </div>
+        </div>
+        <div class="agent-item" data-role="sentinel">
+          <div class="agent-card">
+            <div class="agent-img-wrap">
+              <img src="assets/images/agen/killjoy.webp" alt="Killjoy" class="agent-img" />
+            </div>
+            <div class="agent-info">
+              <div class="agent-role-tag">Sentinel</div>
+              <h5 class="agent-name">Killjoy</h5>
             </div>
           </div>
-          <div class="agent-item" data-role="sentinel">
-            <div class="agent-card">
-              <div class="agent-img-wrap">
-                <img
-                  src="assets/images/agen/killjoy.webp"
-                  alt="Killjoy"
-                  class="agent-img"
-                />
-              </div>
-              <div class="agent-info">
-                <div class="agent-role-tag">Sentinel</div>
-                <h5 class="agent-name">Killjoy</h5>
-              </div>
+        </div>
+        <div class="agent-item" data-role="duelist">
+          <div class="agent-card">
+            <div class="agent-img-wrap">
+              <img src="assets/images/agen/neon.webp" alt="Neon" class="agent-img" />
+            </div>
+            <div class="agent-info">
+              <div class="agent-role-tag">Duelist</div>
+              <h5 class="agent-name">Neon</h5>
             </div>
           </div>
-          <div class="agent-item" data-role="duelist">
-            <div class="agent-card">
-              <div class="agent-img-wrap">
-                <img
-                  src="assets/images/agen/neon.webp"
-                  alt="Neon"
-                  class="agent-img"
-                />
-              </div>
-              <div class="agent-info">
-                <div class="agent-role-tag">Duelist</div>
-                <h5 class="agent-name">Neon</h5>
-              </div>
+        </div>
+        <div class="agent-item" data-role="controller">
+          <div class="agent-card">
+            <div class="agent-img-wrap">
+              <img src="assets/images/agen/omen.webp" alt="Omen" class="agent-img" />
+            </div>
+            <div class="agent-info">
+              <div class="agent-role-tag">Controller</div>
+              <h5 class="agent-name">Omen</h5>
             </div>
           </div>
-          <div class="agent-item" data-role="controller">
-            <div class="agent-card">
-              <div class="agent-img-wrap">
-                <img
-                  src="assets/images/agen/omen.webp"
-                  alt="Omen"
-                  class="agent-img"
-                />
-              </div>
-              <div class="agent-info">
-                <div class="agent-role-tag">Controller</div>
-                <h5 class="agent-name">Omen</h5>
-              </div>
+        </div>
+        <div class="agent-item" data-role="initiator">
+          <div class="agent-card">
+            <div class="agent-img-wrap">
+              <img src="assets/images/agen/phoenix.webp" alt="Phoenix" class="agent-img" />
+            </div>
+            <div class="agent-info">
+              <div class="agent-role-tag">Initiator</div>
+              <h5 class="agent-name">Phoenix</h5>
             </div>
           </div>
-          <div class="agent-item" data-role="initiator">
-            <div class="agent-card">
-              <div class="agent-img-wrap">
-                <img
-                  src="assets/images/agen/phoenix.webp"
-                  alt="Phoenix"
-                  class="agent-img"
-                />
-              </div>
-              <div class="agent-info">
-                <div class="agent-role-tag">Initiator</div>
-                <h5 class="agent-name">Phoenix</h5>
-              </div>
+        </div>
+        <div class="agent-item" data-role="duelist">
+          <div class="agent-card">
+            <div class="agent-img-wrap">
+              <img src="assets/images/agen/raze.webp" alt="Raze" class="agent-img" />
+            </div>
+            <div class="agent-info">
+              <div class="agent-role-tag">Duelist</div>
+              <h5 class="agent-name">Raze</h5>
             </div>
           </div>
-          <div class="agent-item" data-role="duelist">
-            <div class="agent-card">
-              <div class="agent-img-wrap">
-                <img
-                  src="assets/images/agen/raze.webp"
-                  alt="Raze"
-                  class="agent-img"
-                />
-              </div>
-              <div class="agent-info">
-                <div class="agent-role-tag">Duelist</div>
-                <h5 class="agent-name">Raze</h5>
-              </div>
+        </div>
+        <div class="agent-item" data-role="duelist">
+          <div class="agent-card">
+            <div class="agent-img-wrap">
+              <img src="assets/images/agen/reyna.webp" alt="Reyna" class="agent-img" />
+            </div>
+            <div class="agent-info">
+              <div class="agent-role-tag">Duelist</div>
+              <h5 class="agent-name">Reyna</h5>
             </div>
           </div>
-          <div class="agent-item" data-role="duelist">
-            <div class="agent-card">
-              <div class="agent-img-wrap">
-                <img
-                  src="assets/images/agen/reyna.webp"
-                  alt="Reyna"
-                  class="agent-img"
-                />
-              </div>
-              <div class="agent-info">
-                <div class="agent-role-tag">Duelist</div>
-                <h5 class="agent-name">Reyna</h5>
-              </div>
+        </div>
+        <div class="agent-item" data-role="sentinel">
+          <div class="agent-card">
+            <div class="agent-img-wrap">
+              <img src="assets/images/agen/sage.webp" alt="Sage" class="agent-img" />
+            </div>
+            <div class="agent-info">
+              <div class="agent-role-tag">Sentinel</div>
+              <h5 class="agent-name">Sage</h5>
             </div>
           </div>
-          <div class="agent-item" data-role="sentinel">
-            <div class="agent-card">
-              <div class="agent-img-wrap">
-                <img
-                  src="assets/images/agen/sage.webp"
-                  alt="Sage"
-                  class="agent-img"
-                />
-              </div>
-              <div class="agent-info">
-                <div class="agent-role-tag">Sentinel</div>
-                <h5 class="agent-name">Sage</h5>
-              </div>
+        </div>
+        <div class="agent-item" data-role="initiator">
+          <div class="agent-card">
+            <div class="agent-img-wrap">
+              <img src="assets/images/agen/skye.webp" alt="Skye" class="agent-img" />
+            </div>
+            <div class="agent-info">
+              <div class="agent-role-tag">Initiator</div>
+              <h5 class="agent-name">Skye</h5>
             </div>
           </div>
-          <div class="agent-item" data-role="initiator">
-            <div class="agent-card">
-              <div class="agent-img-wrap">
-                <img
-                  src="assets/images/agen/skye.webp"
-                  alt="Skye"
-                  class="agent-img"
-                />
-              </div>
-              <div class="agent-info">
-                <div class="agent-role-tag">Initiator</div>
-                <h5 class="agent-name">Skye</h5>
-              </div>
+        </div>
+        <div class="agent-item" data-role="initiator">
+          <div class="agent-card">
+            <div class="agent-img-wrap">
+              <img src="assets/images/agen/sove.webp" alt="Sova" class="agent-img" />
+            </div>
+            <div class="agent-info">
+              <div class="agent-role-tag">Initiator</div>
+              <h5 class="agent-name">Sova</h5>
             </div>
           </div>
-          <div class="agent-item" data-role="initiator">
-            <div class="agent-card">
-              <div class="agent-img-wrap">
-                <img
-                  src="assets/images/agen/sove.webp"
-                  alt="Sova"
-                  class="agent-img"
-                />
-              </div>
-              <div class="agent-info">
-                <div class="agent-role-tag">Initiator</div>
-                <h5 class="agent-name">Sova</h5>
-              </div>
+        </div>
+        <div class="agent-item" data-role="initiator">
+          <div class="agent-card">
+            <div class="agent-img-wrap">
+              <img src="assets/images/agen/tejo.webp" alt="Tejo" class="agent-img" />
+            </div>
+            <div class="agent-info">
+              <div class="agent-role-tag">Initiator</div>
+              <h5 class="agent-name">Tejo</h5>
             </div>
           </div>
-          <div class="agent-item" data-role="initiator">
-            <div class="agent-card">
-              <div class="agent-img-wrap">
-                <img
-                  src="assets/images/agen/tejo.webp"
-                  alt="Tejo"
-                  class="agent-img"
-                />
-              </div>
-              <div class="agent-info">
-                <div class="agent-role-tag">Initiator</div>
-                <h5 class="agent-name">Tejo</h5>
-              </div>
+        </div>
+        <div class="agent-item" data-role="sentinel">
+          <div class="agent-card">
+            <div class="agent-img-wrap">
+              <img src="assets/images/agen/veto.webp" alt="Veto" class="agent-img" />
+            </div>
+            <div class="agent-info">
+              <div class="agent-role-tag">Sentinel</div>
+              <h5 class="agent-name">Veto</h5>
             </div>
           </div>
-          <div class="agent-item" data-role="sentinel">
-            <div class="agent-card">
-              <div class="agent-img-wrap">
-                <img
-                  src="assets/images/agen/veto.webp"
-                  alt="Veto"
-                  class="agent-img"
-                />
-              </div>
-              <div class="agent-info">
-                <div class="agent-role-tag">Sentinel</div>
-                <h5 class="agent-name">Veto</h5>
-              </div>
+        </div>
+        <div class="agent-item" data-role="controller">
+          <div class="agent-card">
+            <div class="agent-img-wrap">
+              <img src="assets/images/agen/viper.webp" alt="Viper" class="agent-img" />
+            </div>
+            <div class="agent-info">
+              <div class="agent-role-tag">Controller</div>
+              <h5 class="agent-name">Viper</h5>
             </div>
           </div>
-          <div class="agent-item" data-role="controller">
-            <div class="agent-card">
-              <div class="agent-img-wrap">
-                <img
-                  src="assets/images/agen/viper.webp"
-                  alt="Viper"
-                  class="agent-img"
-                />
-              </div>
-              <div class="agent-info">
-                <div class="agent-role-tag">Controller</div>
-                <h5 class="agent-name">Viper</h5>
-              </div>
+        </div>
+        <div class="agent-item" data-role="sentinel">
+          <div class="agent-card">
+            <div class="agent-img-wrap">
+              <img src="assets/images/agen/vyse.webp" alt="Vyse" class="agent-img" />
+            </div>
+            <div class="agent-info">
+              <div class="agent-role-tag">Sentinel</div>
+              <h5 class="agent-name">Vyse</h5>
             </div>
           </div>
-          <div class="agent-item" data-role="sentinel">
-            <div class="agent-card">
-              <div class="agent-img-wrap">
-                <img
-                  src="assets/images/agen/vyse.webp"
-                  alt="Vyse"
-                  class="agent-img"
-                />
-              </div>
-              <div class="agent-info">
-                <div class="agent-role-tag">Sentinel</div>
-                <h5 class="agent-name">Vyse</h5>
-              </div>
+        </div>
+        <div class="agent-item" data-role="duelist">
+          <div class="agent-card">
+            <div class="agent-img-wrap">
+              <img src="assets/images/agen/waylay.webp" alt="Waylay" class="agent-img" />
+            </div>
+            <div class="agent-info">
+              <div class="agent-role-tag">Duelist</div>
+              <h5 class="agent-name">Waylay</h5>
             </div>
           </div>
-          <div class="agent-item" data-role="duelist">
-            <div class="agent-card">
-              <div class="agent-img-wrap">
-                <img
-                  src="assets/images/agen/waylay.webp"
-                  alt="Waylay"
-                  class="agent-img"
-                />
-              </div>
-              <div class="agent-info">
-                <div class="agent-role-tag">Duelist</div>
-                <h5 class="agent-name">Waylay</h5>
-              </div>
+        </div>
+        <div class="agent-item" data-role="duelist">
+          <div class="agent-card">
+            <div class="agent-img-wrap">
+              <img src="assets/images/agen/yoru.webp" alt="YORU" class="agent-img" />
             </div>
-          </div>
-          <div class="agent-item" data-role="duelist">
-            <div class="agent-card">
-              <div class="agent-img-wrap">
-                <img
-                  src="assets/images/agen/yoru.webp"
-                  alt="YORU"
-                  class="agent-img"
-                />
-              </div>
-              <div class="agent-info">
-                <div class="agent-role-tag">Duelist</div>
-                <h5 class="agent-name">YORU</h5>
-              </div>
+            <div class="agent-info">
+              <div class="agent-role-tag">Duelist</div>
+              <h5 class="agent-name">YORU</h5>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-      const filterBtns = document.querySelectorAll(".agent-filter-btn");
-      const agentItems = document.querySelectorAll(".agent-item");
-      filterBtns.forEach((btn) => {
-        btn.addEventListener("click", () => {
-          filterBtns.forEach((b) => b.classList.remove("active"));
-          btn.classList.add("active");
-          const role = btn.dataset.role;
-          agentItems.forEach((item) => {
-            item.style.display =
-              role === "all" || item.dataset.role === role ? "" : "none";
-          });
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    const filterBtns = document.querySelectorAll(".agent-filter-btn");
+    const agentItems = document.querySelectorAll(".agent-item");
+    filterBtns.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        filterBtns.forEach((b) => b.classList.remove("active"));
+        btn.classList.add("active");
+        const role = btn.dataset.role;
+        agentItems.forEach((item) => {
+          item.style.display =
+            role === "all" || item.dataset.role === role ? "" : "none";
         });
       });
-    </script>
-    <footer class="footer text-center">
-      <div class="footer-logo">VALORANT</div>
-      <div class="footer-links">
-        <a href="index.html">Home</a><a href="agents.html">Agents</a
-        ><a href="weapon.html">Weapon</a><a href="maps.html">Maps</a
-        ><a href="esports.html">Esports</a>
-      </div>
-      <div class="footer-socials">
-        <a
-          class="footer-s d-flex align-items-center justify-content-center"
-          href="https://www.facebook.com/PlayVALORANT"
-          target="_blank"
-          rel="noopener noreferrer"
-          title="Facebook"
-        >
-          <i class="bi bi-facebook"></i>
-        </a>
-        <a
-          class="footer-s d-flex align-items-center justify-content-center"
-          href="https://www.youtube.com/@VALORANT"
-          target="_blank"
-          rel="noopener noreferrer"
-          title="YouTube"
-        >
-          <i class="bi bi-youtube"></i>
-        </a>
-        <a
-          class="footer-s d-flex align-items-center justify-content-center"
-          href="https://www.instagram.com/valorant/"
-          target="_blank"
-          rel="noopener noreferrer"
-          title="Instagram"
-        >
-          <i class="bi bi-instagram"></i>
-        </a>
-      </div>
-      <div class="footer-copy">
-        © 2020-2026 Riot Games, Inc. RIOT GAMES, VALORANT
-      </div>
-    </footer>
-  </body>
+    });
+  </script>
+  <footer class="footer text-center">
+    <div class="footer-logo">VALORANT</div>
+    <div class="footer-links">
+      <a href="index.html">Home</a><a href="agents.html">Agents</a><a href="weapon.html">Weapon</a><a
+        href="maps.html">Maps</a><a href="esports.html">Esports</a>
+    </div>
+    <div class="footer-socials">
+      <a class="footer-s d-flex align-items-center justify-content-center" href="https://www.facebook.com/PlayVALORANT"
+        target="_blank" rel="noopener noreferrer" title="Facebook">
+        <i class="bi bi-facebook"></i>
+      </a>
+      <a class="footer-s d-flex align-items-center justify-content-center" href="https://www.youtube.com/@VALORANT"
+        target="_blank" rel="noopener noreferrer" title="YouTube">
+        <i class="bi bi-youtube"></i>
+      </a>
+      <a class="footer-s d-flex align-items-center justify-content-center" href="https://www.instagram.com/valorant/"
+        target="_blank" rel="noopener noreferrer" title="Instagram">
+        <i class="bi bi-instagram"></i>
+      </a>
+    </div>
+    <div class="footer-copy">
+      © 2020-2026 Riot Games, Inc. RIOT GAMES, VALORANT
+    </div>
+  </footer>
+</body>
+
 </html>
