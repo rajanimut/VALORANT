@@ -19,14 +19,14 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <nav id="navbar">
-      <a class="logo" href="index.html">
-        <div class="logo-icon">
+    <nav id="navbar" class="d-flex align-items-center justify-content-between">
+      <a class="logo d-flex align-items-center gap-2" href="index.html">
+        <div class="logo-icon d-flex align-items-center justify-content-center">
           <img src="assets/images/logo-valorant.webp" alt="logo" />
         </div>
         <span class="logo-name">Everything about Valorant</span>
       </a>
-      <ul class="nav-links">
+      <ul class="nav-links d-flex align-items-center m-0">
         <li><a class="nav-label" href="index.html">Home</a></li>
         <li><a class="nav-label" href="agents.html">Agents</a></li>
         <li><a class="nav-label active" href="weapon.html">Weapon</a></li>
@@ -45,7 +45,7 @@
 
     <section class="agents-page-section">
       <div class="container-fluid px-4">
-        <div class="agent-filter-bar justify-content-center">
+        <div class="agent-filter-bar d-flex justify-content-center gap-2 mb-4">
           <button class="agent-filter-btn active" data-category="all">
             Semua
           </button>
@@ -86,7 +86,6 @@
               </div>
             </div>
           </div>
-
           <div class="agent-item" data-category="senjata-sisi">
             <div class="agent-card">
               <div class="agent-img-wrap weapon-bg">
@@ -102,7 +101,6 @@
               </div>
             </div>
           </div>
-
           <div class="agent-item" data-category="senjata-sisi">
             <div class="agent-card">
               <div class="agent-img-wrap weapon-bg">
@@ -118,7 +116,6 @@
               </div>
             </div>
           </div>
-
           <div class="agent-item" data-category="senjata-sisi">
             <div class="agent-card">
               <div class="agent-img-wrap weapon-bg">
@@ -134,7 +131,6 @@
               </div>
             </div>
           </div>
-
           <div class="agent-item" data-category="senjata-sisi">
             <div class="agent-card">
               <div class="agent-img-wrap weapon-bg">
@@ -150,7 +146,6 @@
               </div>
             </div>
           </div>
-
           <div class="agent-item" data-category="senjata-sisi">
             <div class="agent-card">
               <div class="agent-img-wrap weapon-bg">
@@ -166,7 +161,6 @@
               </div>
             </div>
           </div>
-
           <div class="agent-item" data-category="senjata-submesin">
             <div class="agent-card">
               <div class="agent-img-wrap weapon-bg">
@@ -182,7 +176,6 @@
               </div>
             </div>
           </div>
-
           <div class="agent-item" data-category="senjata-submesin">
             <div class="agent-card">
               <div class="agent-img-wrap weapon-bg">
@@ -198,7 +191,6 @@
               </div>
             </div>
           </div>
-
           <div class="agent-item" data-category="senapan-gentel">
             <div class="agent-card">
               <div class="agent-img-wrap weapon-bg">
@@ -214,7 +206,6 @@
               </div>
             </div>
           </div>
-
           <div class="agent-item" data-category="senapan-gentel">
             <div class="agent-card">
               <div class="agent-img-wrap weapon-bg">
@@ -230,7 +221,6 @@
               </div>
             </div>
           </div>
-
           <div class="agent-item" data-category="senapan">
             <div class="agent-card">
               <div class="agent-img-wrap weapon-bg">
@@ -246,7 +236,6 @@
               </div>
             </div>
           </div>
-
           <div class="agent-item" data-category="senapan">
             <div class="agent-card">
               <div class="agent-img-wrap weapon-bg">
@@ -262,7 +251,6 @@
               </div>
             </div>
           </div>
-
           <div class="agent-item" data-category="senapan">
             <div class="agent-card">
               <div class="agent-img-wrap weapon-bg">
@@ -278,7 +266,6 @@
               </div>
             </div>
           </div>
-
           <div class="agent-item" data-category="senapan">
             <div class="agent-card">
               <div class="agent-img-wrap weapon-bg">
@@ -294,7 +281,6 @@
               </div>
             </div>
           </div>
-
           <div class="agent-item" data-category="penembak-jitu">
             <div class="agent-card">
               <div class="agent-img-wrap weapon-bg">
@@ -310,7 +296,6 @@
               </div>
             </div>
           </div>
-
           <div class="agent-item" data-category="penembak-jitu">
             <div class="agent-card">
               <div class="agent-img-wrap weapon-bg">
@@ -326,7 +311,6 @@
               </div>
             </div>
           </div>
-
           <div class="agent-item" data-category="penembak-jitu">
             <div class="agent-card">
               <div class="agent-img-wrap weapon-bg">
@@ -342,7 +326,6 @@
               </div>
             </div>
           </div>
-
           <div class="agent-item" data-category="berat">
             <div class="agent-card">
               <div class="agent-img-wrap weapon-bg">
@@ -358,7 +341,6 @@
               </div>
             </div>
           </div>
-
           <div class="agent-item" data-category="berat">
             <div class="agent-card">
               <div class="agent-img-wrap weapon-bg">
@@ -374,7 +356,6 @@
               </div>
             </div>
           </div>
-
           <div class="agent-item" data-category="jarak-dekat">
             <div class="agent-card">
               <div class="agent-img-wrap weapon-bg">
@@ -398,7 +379,6 @@
     <script>
       const filterBtns = document.querySelectorAll(".agent-filter-btn");
       const weaponItems = document.querySelectorAll(".agent-item");
-
       filterBtns.forEach((btn) => {
         btn.addEventListener("click", () => {
           filterBtns.forEach((b) => b.classList.remove("active"));
@@ -411,25 +391,41 @@
         });
       });
     </script>
-    <footer class="footer">
+    <footer class="footer text-center">
       <div class="footer-logo">VALORANT</div>
       <div class="footer-links">
-        <a href="index.html">Home</a>
-        <a href="agents.html">Agents</a>
-        <a href="weapon.html">Weapon</a>
-        <a href="maps.html">Maps</a>
-        <a href="esports.html">Esports</a>
+        <a href="index.html">Home</a><a href="agents.html">Agents</a
+        ><a href="weapon.html">Weapon</a><a href="maps.html">Maps</a
+        ><a href="esports.html">Esports</a>
       </div>
       <div class="footer-socials">
-        <div class="footer-s" title="Facebook">
+        <a
+          class="footer-s d-flex align-items-center justify-content-center"
+          href="https://www.facebook.com/PlayVALORANT"
+          target="_blank"
+          rel="noopener noreferrer"
+          title="Facebook"
+        >
           <i class="bi bi-facebook"></i>
-        </div>
-        <div class="footer-s" title="YouTube">
+        </a>
+        <a
+          class="footer-s d-flex align-items-center justify-content-center"
+          href="https://www.youtube.com/@VALORANT"
+          target="_blank"
+          rel="noopener noreferrer"
+          title="YouTube"
+        >
           <i class="bi bi-youtube"></i>
-        </div>
-        <div class="footer-s" title="Instagram">
+        </a>
+        <a
+          class="footer-s d-flex align-items-center justify-content-center"
+          href="https://www.instagram.com/valorant/"
+          target="_blank"
+          rel="noopener noreferrer"
+          title="Instagram"
+        >
           <i class="bi bi-instagram"></i>
-        </div>
+        </a>
       </div>
       <div class="footer-copy">
         © 2020-2026 Riot Games, Inc. RIOT GAMES, VALORANT

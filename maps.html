@@ -19,14 +19,14 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <nav id="navbar">
-      <a class="logo" href="index.html">
-        <div class="logo-icon">
+    <nav id="navbar" class="d-flex align-items-center justify-content-between">
+      <a class="logo d-flex align-items-center gap-2" href="index.html">
+        <div class="logo-icon d-flex align-items-center justify-content-center">
           <img src="assets/images/logo-valorant.webp" alt="logo" />
         </div>
         <span class="logo-name">Everything about Valorant</span>
       </a>
-      <ul class="nav-links">
+      <ul class="nav-links d-flex align-items-center m-0">
         <li><a class="nav-label" href="index.html">Home</a></li>
         <li><a class="nav-label" href="agents.html">Agents</a></li>
         <li><a class="nav-label" href="weapon.html">Weapon</a></li>
@@ -67,7 +67,6 @@
             </p>
           </div>
         </div>
-
         <div class="row g-0 map-row-2">
           <div class="col-6">
             <div class="map-card-half">
@@ -112,7 +111,6 @@
             </div>
           </div>
         </div>
-
         <div class="map-card-full">
           <div class="map-card-img-wrap">
             <img
@@ -133,7 +131,6 @@
             </p>
           </div>
         </div>
-
         <div class="row g-0 map-row-2">
           <div class="col-6">
             <div class="map-card-half">
@@ -179,7 +176,6 @@
             </div>
           </div>
         </div>
-
         <div class="map-card-full">
           <div class="map-card-img-wrap">
             <img
@@ -200,7 +196,6 @@
             </p>
           </div>
         </div>
-
         <div class="row g-0 map-row-2">
           <div class="col-6">
             <div class="map-card-half">
@@ -246,7 +241,6 @@
             </div>
           </div>
         </div>
-
         <div class="map-card-full">
           <div class="map-card-img-wrap">
             <img
@@ -267,7 +261,6 @@
             </p>
           </div>
         </div>
-
         <div class="row g-0 map-row-2">
           <div class="col-6">
             <div class="map-card-half">
@@ -316,25 +309,41 @@
       </div>
     </section>
 
-    <footer class="footer">
+    <footer class="footer text-center">
       <div class="footer-logo">VALORANT</div>
       <div class="footer-links">
-        <a href="index.html">Home</a>
-        <a href="agents.html">Agents</a>
-        <a href="weapon.html">Weapon</a>
-        <a href="maps.html">Maps</a>
-        <a href="esports.html">Esports</a>
+        <a href="index.html">Home</a><a href="agents.html">Agents</a
+        ><a href="weapon.html">Weapon</a><a href="maps.html">Maps</a
+        ><a href="esports.html">Esports</a>
       </div>
       <div class="footer-socials">
-        <div class="footer-s" title="Facebook">
+        <a
+          class="footer-s d-flex align-items-center justify-content-center"
+          href="https://www.facebook.com/PlayVALORANT"
+          target="_blank"
+          rel="noopener noreferrer"
+          title="Facebook"
+        >
           <i class="bi bi-facebook"></i>
-        </div>
-        <div class="footer-s" title="YouTube">
+        </a>
+        <a
+          class="footer-s d-flex align-items-center justify-content-center"
+          href="https://www.youtube.com/@VALORANT"
+          target="_blank"
+          rel="noopener noreferrer"
+          title="YouTube"
+        >
           <i class="bi bi-youtube"></i>
-        </div>
-        <div class="footer-s" title="Instagram">
+        </a>
+        <a
+          class="footer-s d-flex align-items-center justify-content-center"
+          href="https://www.instagram.com/valorant/"
+          target="_blank"
+          rel="noopener noreferrer"
+          title="Instagram"
+        >
           <i class="bi bi-instagram"></i>
-        </div>
+        </a>
       </div>
       <div class="footer-copy">
         © 2020-2026 Riot Games, Inc. RIOT GAMES, VALORANT

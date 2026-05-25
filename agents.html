@@ -18,16 +18,15 @@
     />
     <link rel="stylesheet" href="style.css" />
   </head>
-
   <body>
-    <nav id="navbar">
-      <a class="logo" href="index.html">
-        <div class="logo-icon">
+    <nav id="navbar" class="d-flex align-items-center justify-content-between">
+      <a class="logo d-flex align-items-center gap-2" href="index.html">
+        <div class="logo-icon d-flex align-items-center justify-content-center">
           <img src="assets/images/logo-valorant.webp" alt="logo" />
         </div>
         <span class="logo-name">Everything about Valorant</span>
       </a>
-      <ul class="nav-links">
+      <ul class="nav-links d-flex align-items-center m-0">
         <li><a class="nav-label" href="index.html">Home</a></li>
         <li><a class="nav-label active" href="agents.html">Agents</a></li>
         <li><a class="nav-label" href="weapon.html">Weapon</a></li>
@@ -36,8 +35,8 @@
       </ul>
     </nav>
 
-    <section class="page-hero">
-      <div class="container text-center">
+    <section class="page-hero text-center">
+      <div class="container">
         <div class="page-hero-label">VALORANT</div>
         <h1 class="page-hero-title">AGENTS</h1>
         <p class="page-hero-sub">29 agen dengan kemampuan unik</p>
@@ -46,7 +45,7 @@
 
     <section class="agents-page-section">
       <div class="container-fluid px-4">
-        <div class="agent-filter-bar justify-content-center">
+        <div class="agent-filter-bar d-flex justify-content-center gap-2 mb-4">
           <button class="agent-filter-btn active" data-role="all">Semua</button>
           <button class="agent-filter-btn" data-role="duelist">Duelist</button>
           <button class="agent-filter-btn" data-role="controller">
@@ -76,7 +75,6 @@
               </div>
             </div>
           </div>
-
           <div class="agent-item" data-role="initiator">
             <div class="agent-card">
               <div class="agent-img-wrap">
@@ -92,7 +90,6 @@
               </div>
             </div>
           </div>
-
           <div class="agent-item" data-role="controller">
             <div class="agent-card">
               <div class="agent-img-wrap">
@@ -108,7 +105,6 @@
               </div>
             </div>
           </div>
-
           <div class="agent-item" data-role="sentinel">
             <div class="agent-card">
               <div class="agent-img-wrap">
@@ -124,7 +120,6 @@
               </div>
             </div>
           </div>
-
           <div class="agent-item" data-role="controller">
             <div class="agent-card">
               <div class="agent-img-wrap">
@@ -140,7 +135,6 @@
               </div>
             </div>
           </div>
-
           <div class="agent-item" data-role="sentinel">
             <div class="agent-card">
               <div class="agent-img-wrap">
@@ -156,7 +150,6 @@
               </div>
             </div>
           </div>
-
           <div class="agent-item" data-role="sentinel">
             <div class="agent-card">
               <div class="agent-img-wrap">
@@ -172,7 +165,6 @@
               </div>
             </div>
           </div>
-
           <div class="agent-item" data-role="initiator">
             <div class="agent-card">
               <div class="agent-img-wrap">
@@ -188,7 +180,6 @@
               </div>
             </div>
           </div>
-
           <div class="agent-item" data-role="initiator">
             <div class="agent-card">
               <div class="agent-img-wrap">
@@ -204,7 +195,6 @@
               </div>
             </div>
           </div>
-
           <div class="agent-item" data-role="controller">
             <div class="agent-card">
               <div class="agent-img-wrap">
@@ -220,7 +210,6 @@
               </div>
             </div>
           </div>
-
           <div class="agent-item" data-role="duelist">
             <div class="agent-card">
               <div class="agent-img-wrap">
@@ -236,7 +225,6 @@
               </div>
             </div>
           </div>
-
           <div class="agent-item" data-role="duelist">
             <div class="agent-card">
               <div class="agent-img-wrap">
@@ -252,12 +240,11 @@
               </div>
             </div>
           </div>
-
           <div class="agent-item" data-role="initiator">
             <div class="agent-card">
               <div class="agent-img-wrap">
                 <img
-                  src="assets/images/agen/kay-o.webp"
+                  src="assets/images/agen/kayo.webp"
                   alt="KAY/O"
                   class="agent-img"
                 />
@@ -268,7 +255,6 @@
               </div>
             </div>
           </div>
-
           <div class="agent-item" data-role="sentinel">
             <div class="agent-card">
               <div class="agent-img-wrap">
@@ -284,23 +270,6 @@
               </div>
             </div>
           </div>
-
-          <div class="agent-item" data-role="controller">
-            <div class="agent-card">
-              <div class="agent-img-wrap">
-                <img
-                  src="assets/images/agen/miks.webp"
-                  alt="Miks"
-                  class="agent-img"
-                />
-              </div>
-              <div class="agent-info">
-                <div class="agent-role-tag">Controller</div>
-                <h5 class="agent-name">Miks</h5>
-              </div>
-            </div>
-          </div>
-
           <div class="agent-item" data-role="duelist">
             <div class="agent-card">
               <div class="agent-img-wrap">
@@ -316,7 +285,6 @@
               </div>
             </div>
           </div>
-
           <div class="agent-item" data-role="controller">
             <div class="agent-card">
               <div class="agent-img-wrap">
@@ -332,8 +300,7 @@
               </div>
             </div>
           </div>
-
-          <div class="agent-item" data-role="duelist">
+          <div class="agent-item" data-role="initiator">
             <div class="agent-card">
               <div class="agent-img-wrap">
                 <img
@@ -343,12 +310,11 @@
                 />
               </div>
               <div class="agent-info">
-                <div class="agent-role-tag">Duelist</div>
+                <div class="agent-role-tag">Initiator</div>
                 <h5 class="agent-name">Phoenix</h5>
               </div>
             </div>
           </div>
-
           <div class="agent-item" data-role="duelist">
             <div class="agent-card">
               <div class="agent-img-wrap">
@@ -364,7 +330,6 @@
               </div>
             </div>
           </div>
-
           <div class="agent-item" data-role="duelist">
             <div class="agent-card">
               <div class="agent-img-wrap">
@@ -380,7 +345,6 @@
               </div>
             </div>
           </div>
-
           <div class="agent-item" data-role="sentinel">
             <div class="agent-card">
               <div class="agent-img-wrap">
@@ -396,7 +360,6 @@
               </div>
             </div>
           </div>
-
           <div class="agent-item" data-role="initiator">
             <div class="agent-card">
               <div class="agent-img-wrap">
@@ -412,7 +375,6 @@
               </div>
             </div>
           </div>
-
           <div class="agent-item" data-role="initiator">
             <div class="agent-card">
               <div class="agent-img-wrap">
@@ -428,7 +390,6 @@
               </div>
             </div>
           </div>
-
           <div class="agent-item" data-role="initiator">
             <div class="agent-card">
               <div class="agent-img-wrap">
@@ -444,7 +405,6 @@
               </div>
             </div>
           </div>
-
           <div class="agent-item" data-role="sentinel">
             <div class="agent-card">
               <div class="agent-img-wrap">
@@ -460,7 +420,6 @@
               </div>
             </div>
           </div>
-
           <div class="agent-item" data-role="controller">
             <div class="agent-card">
               <div class="agent-img-wrap">
@@ -476,7 +435,6 @@
               </div>
             </div>
           </div>
-
           <div class="agent-item" data-role="sentinel">
             <div class="agent-card">
               <div class="agent-img-wrap">
@@ -492,7 +450,6 @@
               </div>
             </div>
           </div>
-
           <div class="agent-item" data-role="duelist">
             <div class="agent-card">
               <div class="agent-img-wrap">
@@ -508,7 +465,6 @@
               </div>
             </div>
           </div>
-
           <div class="agent-item" data-role="duelist">
             <div class="agent-card">
               <div class="agent-img-wrap">
@@ -532,7 +488,6 @@
     <script>
       const filterBtns = document.querySelectorAll(".agent-filter-btn");
       const agentItems = document.querySelectorAll(".agent-item");
-
       filterBtns.forEach((btn) => {
         btn.addEventListener("click", () => {
           filterBtns.forEach((b) => b.classList.remove("active"));
@@ -545,25 +500,41 @@
         });
       });
     </script>
-    <footer class="footer">
+    <footer class="footer text-center">
       <div class="footer-logo">VALORANT</div>
       <div class="footer-links">
-        <a href="index.html">Home</a>
-        <a href="agents.html">Agents</a>
-        <a href="weapon.html">Weapon</a>
-        <a href="maps.html">Maps</a>
-        <a href="esports.html">Esports</a>
+        <a href="index.html">Home</a><a href="agents.html">Agents</a
+        ><a href="weapon.html">Weapon</a><a href="maps.html">Maps</a
+        ><a href="esports.html">Esports</a>
       </div>
       <div class="footer-socials">
-        <div class="footer-s" title="Facebook">
+        <a
+          class="footer-s d-flex align-items-center justify-content-center"
+          href="https://www.facebook.com/PlayVALORANT"
+          target="_blank"
+          rel="noopener noreferrer"
+          title="Facebook"
+        >
           <i class="bi bi-facebook"></i>
-        </div>
-        <div class="footer-s" title="YouTube">
+        </a>
+        <a
+          class="footer-s d-flex align-items-center justify-content-center"
+          href="https://www.youtube.com/@VALORANT"
+          target="_blank"
+          rel="noopener noreferrer"
+          title="YouTube"
+        >
           <i class="bi bi-youtube"></i>
-        </div>
-        <div class="footer-s" title="Instagram">
+        </a>
+        <a
+          class="footer-s d-flex align-items-center justify-content-center"
+          href="https://www.instagram.com/valorant/"
+          target="_blank"
+          rel="noopener noreferrer"
+          title="Instagram"
+        >
           <i class="bi bi-instagram"></i>
-        </div>
+        </a>
       </div>
       <div class="footer-copy">
         © 2020-2026 Riot Games, Inc. RIOT GAMES, VALORANT
