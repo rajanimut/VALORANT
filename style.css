@@ -15,6 +15,7 @@ a {
 }
 
 body {
+  overflow-x: hidden;
   font-family: "Sora", sans-serif;
   color: #ece8e1;
   background-color: #f5f0eb;
@@ -30,17 +31,15 @@ body {
   left: 0;
   right: 0;
   padding: 10px 24px;
-  background: rgba(26, 31, 46, 0.95);
-  backdrop-filter: blur(18px);
-  -webkit-backdrop-filter: blur(18px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+  background: #1a1f2e;
+  border-bottom: 1px solid #2a2f42;
   box-shadow: 0 4px 24px rgba(0, 0, 0, 0.5);
   z-index: 1000;
 }
 
 .logo-icon {
-  width: 32px;
-  height: 32px;
+  width: 34px;
+  height: 34px;
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 8px;
   overflow: hidden;
@@ -73,236 +72,13 @@ body {
   display: block;
 }
 .nav-label:hover {
-  color: #f0f4ff;
+  color: #16789e;
 }
 .nav-label.active {
   color: #00d4ff;
 }
 
-/*HOME — Hero, About, News, Role Cards, Map List (index.html)*/
-
-.sec-header {
-  margin-bottom: 36px;
-}
-.sec-header .container {
-  padding-left: 0 !important;
-  padding-right: 0 !important;
-  border-radius: 6px;
-  overflow: hidden;
-  background: #ff4655;
-}
-.sec-header h2 {
-  font-size: 28px;
-  font-weight: 900;
-  color: #ece8e1;
-  letter-spacing: -0.5px;
-  padding: 20px 24px;
-  margin: 0;
-}
-
-.btn-valo {
-  background: #ff4655;
-  color: #fff;
-  font-family: "Sora", sans-serif;
-  font-weight: 700;
-  font-size: 13px;
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
-  padding: 12px 32px;
-  border: none;
-  border-radius: 3px;
-  display: inline-block;
-}
-.btn-valo:hover {
-  background: #ff4655;
-  color: #fff;
-}
-.btn-valo-sm {
-  font-size: 12px;
-  padding: 10px 24px;
-}
-
-.hero-section {
-  position: relative;
-  min-height: 83vh;
-  overflow: hidden;
-  background: #1a1a2e;
-}
-.hero-video {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-  display: block;
-  z-index: 0;
-}
-.hero-overlay {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    to bottom,
-    rgba(10, 10, 25, 0.55) 0%,
-    rgba(10, 10, 25, 0.45) 50%,
-    rgba(10, 10, 25, 0.75) 100%
-  );
-  z-index: 1;
-}
-.hero-content {
-  position: relative;
-  z-index: 2;
-  padding: 110px 20px 50px;
-  width: 100%;
-}
-.hero-title {
-  font-size: 96px;
-  font-weight: 900;
-  color: #ece8e1;
-  line-height: 1;
-  letter-spacing: -3px;
-  margin-bottom: 20px;
-}
-.hero-title span {
-  color: #ff4655;
-}
-.hero-subtitle {
-  font-size: 16px;
-  color: #8b8fa8;
-  max-width: 520px;
-  line-height: 1.7;
-  margin-bottom: 32px;
-}
-
-.about-section {
-  background: #1e2d4a;
-  padding: 60px 0;
-}
-.about-text {
-  font-size: 15px;
-  line-height: 1.8;
-  color: #e8f4ff;
-  width: 100%;
-}
-
-.about-stat {
-  background: #fff;
-  border-radius: 6px;
-  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.06);
-  height: 140px;
-}
-.about-stat .stat-number {
-  font-family: "Space Mono", monospace;
-  font-size: 36px;
-  font-weight: 700;
-  color: #ff4655;
-  line-height: 1;
-}
-.about-stat .stat-label {
-  font-size: 12px;
-  font-weight: 600;
-  color: #6b8fa8;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  margin-top: 6px;
-}
-
-.esports-section {
-  background: #1e2d4a;
-  padding: 60px 0;
-}
-
-.news-item {
-  background: #fff;
-  border-radius: 6px;
-  padding: 20px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
-}
-.news-item .news-cat {
-  font-size: 10px;
-  font-weight: 700;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: #ff4655;
-  margin-bottom: 6px;
-}
-.news-item h6 {
-  font-weight: 700;
-  font-size: 14px;
-  color: #1a1a2e;
-  margin-bottom: 6px;
-  line-height: 1.4;
-}
-.news-item p {
-  font-size: 12px;
-  color: #5a6a78;
-  margin: 0;
-}
-
-.maps-section {
-  background: #1e2d4a;
-  padding: 60px 0;
-}
-.map-item {
-  display: flex;
-  align-items: flex-start;
-  gap: 16px;
-  padding: 18px 20px;
-  background: #fff;
-  border-radius: 6px;
-  margin-bottom: 10px;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
-}
-.map-item:last-child {
-  margin-bottom: 0;
-}
-.map-number {
-  font-family: "Space Mono", monospace;
-  font-size: 22px;
-  font-weight: 700;
-  color: #ff4655;
-  min-width: 36px;
-  line-height: 1;
-}
-.map-info h5 {
-  font-weight: 800;
-  font-size: 16px;
-  color: #1a1a2e;
-  margin-bottom: 4px;
-}
-.map-info p {
-  font-size: 13px;
-  color: #6b7280;
-  margin: 0;
-}
-
-.role-intro {
-  color: #d0e8f5;
-  font-size: 14px;
-  margin-bottom: 28px;
-  max-width: 560px;
-}
-.role-card {
-  background: #fff;
-  border-radius: 6px;
-  padding: 24px 20px;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
-  height: 140px;
-}
-.role-card h5 {
-  font-weight: 800;
-  font-size: 15px;
-  color: #1a1a2e;
-  margin-bottom: 6px;
-}
-.role-card p {
-  font-size: 13px;
-  color: #6b7280;
-  margin: 0;
-  line-height: 1.6;
-}
-
-/*AGENTS — Page hero, filter button, grid & card (agents.html)*/
+/*SHARED — Komponen yang dipakai di semua halaman*/
 
 .page-hero {
   padding-top: 110px;
@@ -335,12 +111,7 @@ body {
   line-height: 1.7;
 }
 
-.agents-page-section {
-  background: #1a1f35;
-  padding: 56px 0 72px;
-}
-
-.agent-filter-btn {
+.filter-btn {
   font-family: "Sora", sans-serif;
   font-size: 12px;
   font-weight: 700;
@@ -348,57 +119,60 @@ body {
   text-transform: uppercase;
   padding: 8px 20px;
   border: 2px solid rgba(255, 255, 255, 0.12);
-  border-radius: 3px;
+  border-radius: 2px;
   background: transparent;
   color: #8b8fa8;
-  cursor: pointer;
   transition:
-    background 0.2s,
-    border-color 0.2s,
-    color 0.2s;
+    background 0.4s,
+    border-color 0.4s,
+    color 0.4s;
 }
-.agent-filter-btn:hover,
-.agent-filter-btn.active {
+.filter-btn:hover,
+.filter-btn.active {
   background: #ff4655;
   border-color: #ff4655;
   color: #fff;
 }
 
-.agents-grid {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  gap: 16px;
-}
+/*card - untuk agents dan weapons*/
 
-.agent-card {
-  background: #1e2d4a;
+.card {
+  background: #20304e;
   border-radius: 6px;
   overflow: hidden;
-  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.25);
   height: 100%;
   display: flex;
   flex-direction: column;
 }
-.agent-img-wrap {
+
+.card-img-wrap {  
   width: 100%;
-  aspect-ratio: 3 / 4;
   overflow: hidden;
 }
-.agent-img {
+
+.card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+}
+
+.card-img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  object-position: top center;
-  display: block;
+  object-fit: contain;
+  object-position: center;
 }
-.agent-info {
-  padding: 14px 16px 18px;
-  flex: 1;
-  display: flex;
+
+.card-info {
+  padding: 14px 16px;
   flex-direction: column;
   background: rgba(55, 62, 90, 0.55);
 }
-.agent-role-tag {
+
+.card-role-tag {
   font-family: "Space Mono", monospace;
   font-size: 9px;
   font-weight: 700;
@@ -407,32 +181,254 @@ body {
   margin-bottom: 5px;
   color: #8b8fa8;
 }
-.agent-name {
+
+.card-name {
   font-size: 15px;
   font-weight: 800;
   color: #ece8e1;
   margin: 0 0 2px;
-  letter-spacing: -0.2px;
+  letter-spacing: -0.1px;
 }
 
-.agents-section {
+/*HOME — Hero, About, News, Role Cards, Map List (index.html)*/
+
+.hero-section {
+  position: relative;
+  min-height: 83vh;
+  overflow: hidden;
+  background: #59595e;
+}
+.hero-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  z-index: 0;
+}
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(10, 10, 25, 0.55) 0%,
+    rgba(10, 10, 25, 0.45) 50%,
+    rgba(10, 10, 25, 0.75) 100%
+  );
+  z-index: 1;
+}
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+.hero-title {
+  font-size: 96px;
+  font-weight: 900;
+  line-height: 1;
+  color: #ff4655;
+  letter-spacing: -3px;
+  margin-bottom: 20px;
+}
+
+.hero-subtitle {
+  font-size: 16px;
+  color: #8b8fa8;
+  max-width: 520px;
+  line-height: 1.7;
+  margin-bottom: 32px;
+}
+
+.sec-header {
+  margin-bottom: 30px;
+}
+.sec-header .container {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  border-radius: 6px;
+  overflow: hidden;
+  background: #ff4655;
+}
+.sec-header h2 {
+  font-size: 28px;
+  font-weight: 900;
+  color: #ece8e1;
+  letter-spacing: -0.5px;
+  padding: 20px 24px;
+  margin: 0;
+}
+
+.btn-valo {
+  background: #ff4655;
+  color: #fff;
+  font-family: "Sora", sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding: 12px 32px;
+  border: none;
+  border-radius: 6px;
+  display: inline-block;
+}
+.btn-valo:hover {
+  background: #e91426;
+  color: #fff;
+}
+.btn-valo-sm {
+  font-size: 12px;
+  padding: 10px 24px;
+}
+
+.about-section {
   background: #1e2d4a;
   padding: 60px 0;
+}
+.about-text {
+  font-size: 15px;
+  line-height: 1.8;
+  color: #e8f4ff;
+  width: 100%;
+}
+
+.about-stat {
+  background: #fff;
+  border-radius: 6px;
+  height: 140px;
+}
+.about-stat .stat-number {
+  font-family: "Space Mono", monospace;
+  font-size: 36px;
+  font-weight: 700;
+  color: #ff4655;
+  line-height: 1;
+}
+.about-stat .stat-label {
+  font-size: 12px;
+  font-weight: 600;
+  color: #6b8fa8;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-top: 6px;
+}
+
+.news-section {
+  background: #1e2d4a;
+  padding: 60px 0;
+}
+
+.news-item {
+  background: #fff;
+  border-radius: 6px;
+  padding: 20px;
+}
+.news-item .news-cat {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #ff4655;
+  margin-bottom: 6px;
+}
+.news-item h6 {
+  font-weight: 700;
+  font-size: 14px;
+  color: #1a1a2e;
+  margin-bottom: 6px;
+  line-height: 1.4;
+}
+.news-item p {
+  font-size: 12px;
+  color: #5a6a78;
+  margin: 0;
+}
+
+.role-section {
+  background: #1e2d4a;
+  padding: 60px 0;
+}
+
+.role-intro {
+  color: #d0e8f5;
+  font-size: 14px;
+  margin-bottom: 28px;
+  max-width: 560px;
+}
+.role-card {
+  background: #fff;
+  border-radius: 6px;
+  padding: 24px 20px;
+  height: 140px;
+}
+.role-card h5 {
+  font-weight: 800;
+  font-size: 15px;
+  color: #1a1a2e;
+  margin-bottom: 6px;
+}
+.role-card p {
+  font-size: 13px;
+  color: #6b7280;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.maps-section {
+  background: #1e2d4a;
+  padding: 60px 0;
+}
+.map-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 18px 20px;
+  background: #fff;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.map-number {
+  font-family: "Space Mono", monospace;
+  font-size: 24px;
+  font-weight: 700;
+  color: #ff4655;
+  min-width: 36px;
+  line-height: 2;
+}
+.map-info h5 {
+  font-weight: 800;
+  font-size: 16px;
+  color: #1a1a2e;
+  margin-bottom: 4px;
+}
+.map-info p {
+  font-size: 13px;
+  color: #6b7280;
+  margin: 0;
+}
+
+/*AGENTS — Page hero, filter button, grid & card (agents.html)*/
+
+.agents-page-section {
+  background: #1a1f35;
+  padding: 56px 0 72px;
+}
+
+.agent-img-wrap {
+  aspect-ratio: 3 / 4;
+  overflow: hidden;
 }
 
 /*WEAPON — Grid senjata & background card (weapon.html)*/
 
 .weapons-grid {
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(8, 1fr);
 }
-.agent-img-wrap.weapon-bg {
+.weapon-bg {
   background: rgba(255, 70, 85, 0.15);
   padding: 20px 16px;
-  aspect-ratio: 4 / 3;
-}
-.agent-img-wrap.weapon-bg .agent-img {
-  object-fit: contain;
-  object-position: center;
+  aspect-ratio: 4 / 5;
 }
 
 /*MAPS — Full & half map card, overlay, body (maps.html)*/
@@ -457,10 +453,6 @@ body {
   overflow: hidden;
   display: flex;
   align-items: flex-end;
-  border-top: 1px solid rgba(255, 255, 255, 0.05);
-}
-.map-row-2 .map-card-half:first-child {
-  border-right: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .map-card-img-wrap {
@@ -468,6 +460,7 @@ body {
   inset: 0;
   width: 100%;
   height: 100%;
+  background: #d30000;
 }
 .map-card-img {
   width: 100%;
@@ -482,8 +475,8 @@ body {
   background: linear-gradient(
     to top,
     rgba(10, 12, 20, 0.96) 0%,
-    rgba(10, 12, 20, 0.55) 38%,
-    rgba(10, 12, 20, 0.08) 70%,
+    rgba(10, 12, 20, 0.55) 20%,
+    rgba(10, 12, 20, 0.08) 60%,
     transparent 100%
   );
 }
@@ -504,7 +497,7 @@ body {
   color: #ece8e1;
   letter-spacing: -2px;
   line-height: 1;
-  margin: 0 0 14px;
+  margin-bottom: 12px;
   text-transform: uppercase;
 }
 .map-card-half .map-card-name {
@@ -526,6 +519,11 @@ body {
 
 /*ESPORTS — VCT team card & local team card (esports.html)*/
 
+.esports-section {
+  background: #1e2d4a;
+  padding: 60px 0;
+}
+
 .esports-section--no-pb {
   padding-bottom: 0;
 }
@@ -534,7 +532,6 @@ body {
   background: #fff;
   border-radius: 6px;
   overflow: hidden;
-  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.08);
 }
 .et-logo {
   width: 96px;
@@ -543,27 +540,14 @@ body {
   background: #fff;
 }
 .et-logo img {
-  width: 100%;
-  height: 100%;
+  height: 130%;
   object-fit: contain;
 }
-.et-logo-fallback {
-  font-family: "Space Mono", monospace;
-  font-size: 16px;
-  font-weight: 700;
-  color: #fff;
-  letter-spacing: 1px;
-}
-.boom-fb {
-  color: #ff4655 !important;
-}
+
 .et-right {
   flex: 1;
   padding: 24px 28px;
   gap: 24px;
-}
-.et-body {
-  flex: 1;
 }
 .et-top {
   margin-bottom: 12px;
@@ -589,14 +573,13 @@ body {
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
 }
 .el-logo {
-  width: 56px;
-  height: 56px;
+  width: 96px;
+  height: 96px;
   border-radius: 8px;
   background: #fff;
   overflow: hidden;
 }
 .el-logo img {
-  width: 100%;
   height: 100%;
   object-fit: contain;
 }
