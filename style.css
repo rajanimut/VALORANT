@@ -636,7 +636,7 @@ body {
   font-size: 12px;
   letter-spacing: 1.5px;
   text-transform: uppercase;
-  transition: color 0.2s;
+  transition: color 0.4s;
 }
 .footer-links a:hover {
   color: #ff4655;
@@ -656,8 +656,8 @@ body {
   cursor: pointer;
   text-decoration: none;
   transition:
-    border-color 0.2s,
-    color 0.2s;
+    border-color 0.4s,
+    color 0.4s;
 }
 .footer-s:hover {
   border-color: #ff4655;
