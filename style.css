@@ -267,7 +267,6 @@ body {
   font-size: 13px;
   letter-spacing: 1.5px;
   text-transform: uppercase;
-  padding: 12px 32px;
   border: none;
   border-radius: 6px;
   display: inline-block;
@@ -483,12 +482,12 @@ body {
 .map-card-body {
   position: relative;
   z-index: 2;
-  padding: 0 40px 40px;
+  padding: 0 40px 30px;
   width: 100%;
 }
 .map-card-full .map-card-body {
   max-width: 720px;
-  padding: 0 56px 52px;
+  padding: 0 40px 30px;
 }
 
 .map-card-name {
